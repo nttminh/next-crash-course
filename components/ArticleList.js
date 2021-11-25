@@ -5,8 +5,8 @@ import ArticleItem from './ArticleItem'
 const ArticleList = ({ articles }) => {
     return (
         <div className={articleStyles.grid}>
-            {articles.map(article =>
-                <ArticleItem article={article}></ArticleItem>)
+            {articles.map((article, index) =>
+                <ArticleItem article={article} key={index}></ArticleItem>)
             }
         </div>
     )
